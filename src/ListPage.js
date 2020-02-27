@@ -7,7 +7,6 @@ import {
   Block,
   Field,
   Control,
-  Heading,
   Divider
 } from "rbx";
 import { ColumnGroup } from "rbx/grid/columns/column-group";

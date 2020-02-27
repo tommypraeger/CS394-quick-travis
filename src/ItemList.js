@@ -1,9 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Delete, Table, Button, Box, Heading, Input } from "rbx";
+import React from "react";
+import { Delete, Table, Button, Box, Heading } from "rbx";
 import { deleteItem, updateItemNumber } from "./firebaseHelpers";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
-import { updatingNotes, db } from "./firebaseHelpers";
 
 const getTotalQuantity = neededBy => {
   if (neededBy === undefined) {
