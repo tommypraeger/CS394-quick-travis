@@ -12,4 +12,14 @@ test('ListPage should update product name on change', () => {
     <ListPage propItems={propItems} user={user} house={house} testFn={testFn} />
   );
   
+  const productInput = getByTestId('product-input');
+  fireEvent.change(productInput, {
+    target: { value: 'hello' },
+  });
+  expect(testFn).toBeCalledWith('hello');
+  fireEvent.change(productInput, {
+    target: { value: 'goodbye' },
+  });
+  expect(testFn).toBeCalledWith('goodbye');
+  expect(testFn).toHaveBeenCalledTimes(2);
 })
