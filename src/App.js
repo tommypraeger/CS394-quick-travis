@@ -63,7 +63,7 @@ function App() {
     <div className="App">
       <Banner user={user} house={house} setHouse={setHouse} housesData={housesData} usersData={usersData}/>
       <Block/>
-      <ListPage propItems={items} user={user} house={house} />
+      <ListPage propItems={items} user={user} house={house} testFn={(input) => input} />
     </div>
   );
 }
