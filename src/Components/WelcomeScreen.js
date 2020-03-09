@@ -10,7 +10,7 @@ const WelcomeScreen = () => {
   return (
     <Container breakpoint="desktop">
       <Column size={10} offset={1}>
-        <Title size={1} spaced>
+        <Title size={1} spaced data-cy="title">
           OneHouse
         </Title>
         <Title subtitle size={4}>

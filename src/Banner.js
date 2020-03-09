@@ -62,7 +62,9 @@ const Logout = ({ user, house }) => {
 };
 
 const SignIn = () => (
-  <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+  <div data-cy="sign-in">
+    <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()}/>
+  </div>
 );
 
 export default Banner;
