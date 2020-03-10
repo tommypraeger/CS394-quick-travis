@@ -14,4 +14,13 @@ describe ('Test App', () => {
     cy.get('.navbar-burger').click();
     cy.get('[data-cy=sign-in]').should('be.visible');
   });
+
+
+  it ('opens and closes navbar', () => {
+    cy.visit ('/');
+    cy.get('.navbar-burger').click();
+    cy.get('[data-cy=sign-in]').should('be.visible');
+    cy.get('.navbar-burger').click();
+    cy.get('[data-cy=sign-in]').should('not.be.visible');
+  });
 });
